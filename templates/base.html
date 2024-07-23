@@ -1,22 +1,20 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chart</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
-
+    <title>Real Time Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}">  {% endcomment %}
 </head>
 <body>
-    <h1 id="myText" class="text-red-900 text-4xl">Hello</h1>
-    <div class="bg-red-600 h-52 w-52"></div>
+    <h1 id='t1'></h1>
     <canvas id="myChart"></canvas>
     
     
 </body>
+
 <script src ="{% static 'js/main.js' %}"></script>
-{% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> {% endcomment %}
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
